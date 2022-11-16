@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script src="jquery-3.6.1.min.js"></script>
+    <script class="data" src="http://localhost:9001/data.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <video  loop="loop" autoplay="autoplay" muted="muted"><source src="./autumn20190924.mp4" type="video/mp4"></video>
+    <div class="content">
+        <div class="show">
+            <div><span>温度：</span><span class="tempurature"></span></div>
+        <div><span>湿度：</span><span class="shidu"></span></div>
+        
+        </div>
+    </div>
+    
+    
+</body>
+
+    <style>
+        body{
+            position: relative;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        video {
+         position: absolute;
+         left: 0px;
+         top: 0px;
+         z-index: -100;
+    
+            width: 100%;}
+        .content{
+            padding-top: 100px;
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .show{
+           
+            margin: 0 auto;
+            width: 800px;
+            height: 300px;
+            background-color: rgba(255, 255, 255, .5);
+            padding-top: 100px;
+            border-radius: 20px;
+        }
+        .show table{
+            margin: 0 auto;
+            width: 500px;
+            padding-bottom: 30px;
+            font-size: 35px;
+        }
+
+
+    </style>
+</html>
